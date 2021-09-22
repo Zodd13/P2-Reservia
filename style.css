@@ -1,0 +1,45 @@
+/** Réglages de bases **/
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,600&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+header {
+  display: flex;
+  margin-right: 5%;
+}
+nav {
+  display: inline-flex;
+  margin-left: 70%;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.menu {
+  width: 450px;
+}
+h1 {
+  margin-left: 2.9%;
+  margin-top: 2%;
+  font-size: 1.3rem;
+}
+p {
+  font-family: "Raleway", sans-serif;
+}
+#logo {
+  display: inline-flex;
+  width: auto;
+  height: 6vh;
+  margin-left: 2.9%;
+  margin-top: 52px;
+}
+#searchfilters {
+  display: flex;
+}
+.soustitre {
+  margin-left: 2.9%;
+  font-size: 1.3rem;
+}
