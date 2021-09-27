@@ -152,37 +152,10 @@ h2 {
 
 /** HEBERGEMENTS **/
 
-img{
-  width: 241px; 
-  height: 114px;
-  border-radius: 25px 25px 0px 0px;
-  border: white solid 5px;
-  }
-  .imghebergement{
-    background-color: white;
-    border-radius: 25px 25px 0px 0px;
-  }
- .hebergements{
+main{
   display: grid;
-  grid-template-columns: 250px 250px 250px;
-  background-color: #f2f2f2;
-  border-radius: 25px 25px 25px 25px;
-  width: 880px;
-  justify-content: space-between;
-  vertical-align: center;
-  padding-top: 90px;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 90px;
- }
- .texte{
-  border-radius: 0px 0px 25px 25px;
-  border: white solid 5px;
-  background-color: white;
-  width: 241px;
-  height: 75px;
- }
- article{
-   display: flex;
-   padding-bottom: 25px;
- }
+  grid-template-columns: 3fr 1.5fr;
+  }
+.fa-stars {
+  background-color: transparent;
+}
