@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <!--Header-->
+  <!--Header & Barre de navigation -->
 
   <body>
     <header>
-      <div id="logo">
-        <img src="/images/logo/Reservia.svg" alt="logoo" />
-      </div>
       <nav>
+        <div id="logo">
+          <img src="/images/logo/Reservia.svg" alt="logoo" />
+        </div>
         <div class="menu">
           <ul>
-            <li><a id="ab" href="#hebergements"> Hébergements</a></li>
-            <li><a id="cd" href="#activites"> Activités</a></li>
+            <li><a href="#hebergements"> Hébergements</a></li>
+            <li><a href="#activites"> Activités</a></li>
             <li><a id="ef" href="#inscrire"> S'inscrire</a></li>
           </ul>
         </div>
@@ -34,7 +34,7 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       </div>
       <div class="soustitre">
-        <p>En plein centre ville ou en pleine nature</p>
+        <h2>En plein centre ville ou en pleine nature</h2>
       </div>
     </div>
 
@@ -42,12 +42,7 @@
 
     <div class="inputsearch">
       <button type="button">Rechercher</button>
-      <input
-        type="search"
-        name="city"
-        id="city"
-        placeholder="Marseille, France"
-      />
+      <input type="search" name="city" id="city" placeholder="Marseille, France"/>
       <div id="mapicon">
         <i class="fa fa-map-marker-alt"></i>
       </div>
@@ -56,7 +51,7 @@
     <!-- FILTRES DE RECHERCHE-->
 
     <div class="filters">
-      <h2>Filtres</h2>
+      <p class="filtres">Filtres</p>
       <div class="filtre">
         <i class="fas fa-money-bill-wave"></i>
         <span>Économique</span>
