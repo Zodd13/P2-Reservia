@@ -12,67 +12,77 @@
   <!--Header & Barre de navigation -->
 
   <body>
-    <header>
-      <nav>
-        <div id="logo">
-          <img src="/images/logo/Reservia.svg" alt="logoo" />
+    <div class="search">
+      <header> 
+        <nav>
+          <div id="logo">
+            <img src="/images/logo/Reservia.svg" alt="logoo" />
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a class="headerlink" href="#hebergements"> Hébergements</a></li>
+              <li><a class="headerlink" href="#activites"> Activités</a></li>
+              <li><a class="headerlinkInscription" href="#inscrire"> S'inscrire</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- TITRE -->
+
+      <div class="titre">
+        <div class="titre1">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         </div>
-        <div class="menu">
-          <ul>
-            <li><a href="#hebergements"> Hébergements</a></li>
-            <li><a href="#activites"> Activités</a></li>
-            <li><a id="ef" href="#inscrire"> S'inscrire</a></li>
-          </ul>
+        <div class="soustitre">
+          <h2>En plein centre ville ou en pleine nature</h2>
         </div>
-      </nav>
-    </header>
+      </div>
 
-    <!-- TITRE -->
+      <!-- BARRE DE RECHERCHE -->
 
-    <div class="titre">
-      <div class="titre1">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <div class="inputsearch">
+        <button type="button">Rechercher</button>
+        <input type="search" name="city" id="city" placeholder="Marseille, France"/>
+        <div id="mapicon">
+          <i class="fa fa-map-marker-alt"></i>
+        </div>
       </div>
-      <div class="soustitre">
-        <h2>En plein centre ville ou en pleine nature</h2>
-      </div>
-    </div>
 
-    <!-- BARRE DE RECHERCHE -->
+      <!-- FILTRES DE RECHERCHE-->
 
-    <div class="inputsearch">
-      <button type="button">Rechercher</button>
-      <input type="search" name="city" id="city" placeholder="Marseille, France"/>
-      <div id="mapicon">
-        <i class="fa fa-map-marker-alt"></i>
+      <div class="filters">
+        <p class="filtres">Filtres</p>
+        <div class="filtre">
+          <div class="filtericon">
+            <i class="fas fa-money-bill-wave filtericon" aria-hidden="true"></i>
+          </div>
+          <span class="filtertitle">Économique</span>
+        </div>
+        <div class="filtre">
+          <div class="filtericon">
+            <i class="fas fa-child filtericon" aria-hidden="true"></i>
+          </div>
+          <span class="filtertitle">Familial</span>
+        </div>
+        <div class="filtre">
+          <div class="filtericon">
+            <i class="fas fa-heart filtericon" aria-hidden="true"></i>
+          </div>
+          <span class="filtertitle">Romantique</span>
+        </div>
+        <div class="filtre">
+          <div class="filtericon">
+            <i class="fas fa-dog filtericon" aria-hidden="true"></i>
+          </div>
+          <span class="filtertitle">Animaux autorisés</span>
+        </div>
       </div>
-    </div>
-
-    <!-- FILTRES DE RECHERCHE-->
-
-    <div class="filters">
-      <p class="filtres">Filtres</p>
-      <i class="fas fa-money-bill-wave"></i>
-      <div class="filtre">
-        <span>Économique</span>
+      <div class="infos">
+        <i class="fas fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
-      <i class="fas fa-child"></i>
-      <div class="filtre">
-        <span>Familial</span>
-      </div>
-      <i class="fas fa-heart"></i>
-      <div class="filtre">
-        <span>Romantique</span>
-      </div>
-      <i class="fas fa-dog"></i>
-      <div class="filtre">
-        <span>Animaux autorisés</span>
-      </div>
-    </div>
-    <div class="infos">
-      <i class="fas fa-info"></i>
-      <p>Plus de 500 logements sont disponibles dans cette ville</p>
-    </div>
+    </div> 
 
     <!--Hôtel & Populaire-->
 
