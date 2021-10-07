@@ -2,20 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,600&display=swap");
 
-body {
+body{
   font-family: "Raleway", sans-serif;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin-top: 0;
+  margin-right: 10%;
+  margin-left: 10%;
   overflow-x: hidden; 
 }
-#ab {
+#ab{
   color: #0065fc;
 }
-#ef {
+#ef{
   font-weight: bold;
   color: #0065fc;
 }
-a:visited {
+a:visited{
   color: black;
 }
 * {
@@ -24,73 +26,69 @@ a:visited {
 }
 /** HEADER & Barre de navigation **/
 
-header {
+header{
   width: 100%;
   display: flex;
 }
 .headerlink{
-  padding:3rem;
+  padding:2rem;
 }
 .headerlinkInscription{
-  padding: 3rem;
+  padding: 2rem;
   color: #0065fc;
   font-weight: bold;
 }
 li .headerlinkInscription{
   color: #0065fc;
 }
-nav {
+nav{
   width: 100%;
   display: inline-flex;
   align-items: center;
-  margin-left: 0%;
   margin-right: 0%;
 }
-#logo img{
+.logo{
   width: 100%;
-  margin-left: 100%;
-  margin-right: 5%;
+  margin-right: 0%;
 }
-.menu {
+.menu{
   width: 100%;
   justify-content: flex-end;
 }
-header .menu > ul {
+header .menu > ul{
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
 }
-header ul > li {
+header ul > li{
   display: flex;
-  margin-right: 5%;
+  margin-right: 1%;
 }
 .headerlink:hover , .headerlinkInscription:hover{
   color: #0065fc;
   cursor: pointer;
   border-top: 2px solid #0065fc;
 }
-#bar1,
-#bar3 {
+#bar1,#bar3{
   font-weight: normal;
   color: #0065fc;
 }
 
 /**            TITRE et  SOUS-TITRE                 **/
 
-.titre {
+.titre{
   width: 90%;
-  margin-left: 5%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.titre1 h1 {
+.titre1 h1{
   display: flex;
   font-size: 1.3rem;
   margin-bottom: 1%;
 }
-.soustitre h2 {
+.soustitre h2{
   margin-top: 0%;
   margin-bottom: 5%;
   padding: 0%;
@@ -100,15 +98,14 @@ header ul > li {
 
 /** BARRE DE RECHERCHE **/
 
-.inputsearch {
+.inputsearch{
   width: 100%;
   height: 50px;
-  margin-left: 5%;
   display: flex;
   justify-content: flex-end;
   flex-direction: row-reverse;
 }
-button {
+button{
   font-size: 1rem;
   padding: 1%;
   align-items: center;
@@ -119,20 +116,20 @@ button {
   background-color: #0065fc;
   border-radius: 0px 20px 20px 0px;
 }
-#city {
+#city{
   align-items: center;
   vertical-align: center;
   border: 1px solid #f2f2f2;
   width: 12.5%;
 }
-::placeholder {
+::placeholder{
   color: black;
   font-weight: bold;
   padding-left: 5%;
   justify-content: center;
   font-size: 1.1rem;
 }
-#mapicon {
+#mapicon{
   background-color: #f2f2f2;
   border-radius: 15px 0px 0px 15px;
   width: 3%;
@@ -155,7 +152,6 @@ p.filtres{
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: 5%;
   margin-top: 2rem;
 }
 .filtre{
@@ -184,95 +180,100 @@ p.filtres{
 .filtertitle{
   margin: 0 1.3rem;
 }
-.filtre:hover {
+.filtre:hover{
   transition: transform 125ms;
   transform: translateY(-10px);
 }
-
+.infos{
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 0 0;
+}
+.infoicon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  color: #0065fc;
+  min-width: 2rem;
+  min-height: 2rem;
+  border: solid 1px #d9d9d9;
+  border-radius: 100%;
+}
 
 /** HEBERGEMENTS **/
-h3 {
+
+h3{
   display: flex;
   font-size: 1.6rem;
-  margin-bottom: 20px;
-  padding-left: 30px;
 }
-main {
+main{
   display: flex;
-  margin-left: 0%;
-  justify-content: center;
+  height: 40rem;
 }
-#hebergements {
+#hebergements{
   display: flex;
+  margin-right: 3.5%;
   flex-direction: column;
 }
-main article,
-main aside {
+main article, main aside{
   background: #f2f2f2;
   border-radius: 25px;
-  margin-top: 20px;
+  margin-top: 2%;
 }
-main article > .room-list {
+main article > .room-list{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 30px;
-  grid-column-gap: 30px;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
   justify-content: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
-main > article .link {
+main > article .link{
+  padding: 0.3rem;
+  height: 100%;
+  box-sizing: border-box;
   box-shadow: 2px 6px 20px 0px #8080805c;
-  width: 250px;
-  height: 200px;
   border-radius: 20px;
   background-color: white;
 }
-main > article img {
+main > article img{
   display: flex;
-  height: 115px;
-  width: 240px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-right: 5px;
-  border-radius: 20px 20px 0px 0px;
+  height: 7rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
   object-fit: cover;
 }
-.link:hover {
+.link:hover{
   transform: scale(1.1);
   transition: 0.5s;
 }
 
-main > article .link-body {
+main > article .link-body{
   display: flex;
-  padding-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 0.2rem 0.2rem ;
   flex-direction: column;
   justify-content: flex-end;
 }
-main > article .link-title,
-.link-text,
-.link-stars {
-  margin: 0px;
+main > article .link-title,.link-text,.link-stars{
   color: black;
-  margin: 2px;
+  margin: 0.1rem;
 }
-main > article .link-title {
+main > article .link-title{
   font-size: 1.1rem;
   font-weight: bold;
 }
-main > article .link-text {
+main > article .link-text{
   font-size: 0.9rem;
-  margin: 0px;
-  padding-left: 3px;
+  padding-left: 0.1rem;
 }
-main > article .link-stars {
+main > article .link-stars{
   color: #0065fc;
   font-size: 0.8rem;
 }
-main > article .see-more {
+main > article .see-more{
   display: flex;
   padding-left: 50px;
   font-weight: bold;
@@ -281,78 +282,76 @@ main > article .see-more {
 }
 
 /* LES PLUS POPULAIRES */
-aside {
-  display: flex;
-  flex-direction: column;
-  height: 625px;
-  min-width: 25%;
-}
-aside h3 {
-  display: flex;
-  padding-left: 0px;
-  margin-bottom: 20px;
-}
-aside .room-list {
+
+aside{
   display: grid;
-  justify-content: center;
-  grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 50px;
+  padding: 2rem;
+  row-gap: 2rem;
+  width: 20%;
+  align-items: start;
+  grid-template-rows: auto repeat(3, 1fr);
+  
 }
-aside .link {
-  box-shadow: 2px 6px 20px 0px #8080805c;
+.poptitle{
+  font-size: 1.2rem;
   display: flex;
-  max-width: 335px;
-  max-height: 135px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+aside .link1, .link2, .link3{
   background-color: white;
-  border-radius: 20px;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 }
-aside a {
+aside a{
   display: flex;
+  align-items: stretch;
+  height: 100%;
+  overflow: auto;
 }
-aside .link-body {
+aside .link-img{
+  position: relative;
+  min-height: 100%;
+  width: 33%;
+  min-width: 33%;
+  max-width: 33%;
+}
+aside img{
+  border-radius: 1rem 0 0 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+aside .link-body{
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
 }
-aside img {
-  border-radius: 20px 0px 0px 20px;
-  padding: 5px;
-  width: 130px;
-  height: 125px;
-  object-fit: cover;
-}
-aside .aside-title {
+aside .link-title{
   display: flex;
-  font-size: 1.5rem;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 45px;
-  margin-left: 35px;
+  flex-direction: column;
 }
-aside .link-title {
-  display: flex;
-  padding-bottom: 15px;
-  font-size: 1.1rem;
-  height: 35px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 0px;
+aside h5{
+  margin: 0.25rem 0.75rem 0 0.75rem;
 }
-aside .link-stars {
-  font-size: 0.8rem;
-  height: 45px;
-  display: flex;
-  vertical-align: bottom;
-  align-items: flex-end;
-  justify-content: flex-start;
-  color: #0065fc;
+aside .link-text{
+  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
-#aa {
-  color: #d9d9d9;
+aside .space{
+  flex: 1;
 }
-aside .link-text {
-  font-size: 0.9rem;
-  padding: 0px;
+aside .link-stars{
+  margin: 0 0.75rem 0.25rem 0.75rem;
+}
+.starIcon{
+  color:#0065fc;
 }
 
 /* ACTIVITES A MARSEILLE */
