@@ -2,22 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,600&display=swap");
 
-body{
+body {
   font-family: "Raleway", sans-serif;
   padding: 0;
   margin-top: 0;
   margin-right: 10%;
   margin-left: 10%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
-#ab{
+#ab {
   color: #0065fc;
 }
-#ef{
+#ef {
   font-weight: bold;
   color: #0065fc;
 }
-a:visited{
+a:visited {
   color: black;
 }
 * {
@@ -26,69 +26,71 @@ a:visited{
 }
 /** HEADER & Barre de navigation **/
 
-header{
+header {
   width: 100%;
   display: flex;
 }
-.headerlink{
-  padding:2rem;
+.headerlink {
+  padding: 2rem;
 }
-.headerlinkInscription{
+.headerlinkInscription {
   padding: 2rem;
   color: #0065fc;
   font-weight: bold;
 }
-li .headerlinkInscription{
+li .headerlinkInscription {
   color: #0065fc;
 }
-nav{
+nav {
   width: 100%;
   display: inline-flex;
   align-items: center;
   margin-right: 0%;
 }
-.logo{
+.logo {
   width: 100%;
   margin-right: 0%;
 }
-.menu{
+.menu {
   width: 100%;
   justify-content: flex-end;
 }
-header .menu > ul{
+header .menu > ul {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
 }
-header ul > li{
+header ul > li {
   display: flex;
   margin-right: 1%;
 }
-.headerlink:hover , .headerlinkInscription:hover{
+.headerlink:hover,
+.headerlinkInscription:hover {
   color: #0065fc;
   cursor: pointer;
   border-top: 2px solid #0065fc;
 }
-#bar1,#bar3{
+#bar1,
+#bar3 {
   font-weight: normal;
   color: #0065fc;
 }
 
 /**            TITRE et  SOUS-TITRE                 **/
 
-.titre{
+.titre {
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.titre1 h1{
+.titre1 h1 {
   display: flex;
   font-size: 1.3rem;
   margin-bottom: 1%;
 }
-.soustitre h2{
+.soustitre h2 {
   margin-top: 0%;
   margin-bottom: 5%;
   padding: 0%;
@@ -98,14 +100,14 @@ header ul > li{
 
 /** BARRE DE RECHERCHE **/
 
-.inputsearch{
+.inputsearch {
   width: 100%;
   height: 50px;
   display: flex;
   justify-content: flex-end;
   flex-direction: row-reverse;
 }
-button{
+button {
   font-size: 1rem;
   padding: 1%;
   align-items: center;
@@ -116,20 +118,20 @@ button{
   background-color: #0065fc;
   border-radius: 0px 20px 20px 0px;
 }
-#city{
+#city {
   align-items: center;
   vertical-align: center;
   border: 1px solid #f2f2f2;
   width: 12.5%;
 }
-::placeholder{
+::placeholder {
   color: black;
   font-weight: bold;
   padding-left: 5%;
   justify-content: center;
   font-size: 1.1rem;
 }
-#mapicon{
+#mapicon {
   background-color: #f2f2f2;
   border-radius: 15px 0px 0px 15px;
   width: 3%;
@@ -140,7 +142,7 @@ button{
 
 /** FILTRES DE RECHERCHES **/
 
-p.filtres{
+p.filtres {
   font-size: 1.3rem;
   font-weight: bold;
   display: flex;
@@ -148,13 +150,13 @@ p.filtres{
   margin: 0;
   margin-right: 1rem;
 }
-.filters{
+.filters {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
   margin-top: 2rem;
 }
-.filtre{
+.filtre {
   display: flex;
   font-weight: bold;
   cursor: pointer;
@@ -164,7 +166,7 @@ p.filtres{
   align-items: center;
   transition-duration: 0.1s;
 }
-.filtericon{
+.filtericon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,19 +179,19 @@ p.filtres{
   min-height: 2.9rem;
   color: #0065fc;
 }
-.filtertitle{
+.filtertitle {
   margin: 0 1.3rem;
 }
-.filtre:hover{
+.filtre:hover {
   transition: transform 125ms;
   transform: translateY(-10px);
 }
-.infos{
+.infos {
   display: flex;
   align-items: center;
   margin: 1rem 0 0 0;
 }
-.infoicon{
+.infoicon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,25 +205,26 @@ p.filtres{
 
 /** HEBERGEMENTS **/
 
-h3{
+h3 {
   display: flex;
   font-size: 1.6rem;
 }
-main{
+main {
   display: flex;
   height: 40rem;
 }
-#hebergements{
+#hebergements {
   display: flex;
   margin-right: 3.5%;
   flex-direction: column;
 }
-main article, main aside{
+main article,
+main aside {
   background: #f2f2f2;
   border-radius: 25px;
   margin-top: 2%;
 }
-main article > .room-list{
+main article > .room-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -231,7 +234,7 @@ main article > .room-list{
   padding-left: 3rem;
   padding-right: 3rem;
 }
-main > article .link{
+main > article .link {
   padding: 0.3rem;
   height: 100%;
   box-sizing: border-box;
@@ -239,41 +242,43 @@ main > article .link{
   border-radius: 20px;
   background-color: white;
 }
-main > article img{
+main > article img {
   display: flex;
   height: 7rem;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
 }
-.link:hover{
+.link:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
 
-main > article .link-body{
+main > article .link-body {
   display: flex;
-  margin: 0.2rem 0.2rem ;
+  margin: 0.2rem 0.2rem;
   flex-direction: column;
   justify-content: flex-end;
 }
-main > article .link-title,.link-text,.link-stars{
+main > article .link-title,
+.link-text,
+.link-stars {
   color: black;
   margin: 0.1rem;
 }
-main > article .link-title{
+main > article .link-title {
   font-size: 1.1rem;
   font-weight: bold;
 }
-main > article .link-text{
+main > article .link-text {
   font-size: 0.9rem;
   padding-left: 0.1rem;
 }
-main > article .link-stars{
+main > article .link-stars {
   color: #0065fc;
   font-size: 0.8rem;
 }
-main > article .see-more{
+main > article .see-more {
   display: flex;
   padding-left: 50px;
   font-weight: bold;
@@ -283,23 +288,24 @@ main > article .see-more{
 
 /* LES PLUS POPULAIRES */
 
-aside{
+aside {
   display: grid;
   padding: 2rem;
   row-gap: 2rem;
   width: 20%;
   align-items: start;
   grid-template-rows: auto repeat(3, 1fr);
-  
 }
-.poptitle{
+.poptitle {
   font-size: 1.2rem;
   display: flex;
   margin: 0;
   display: flex;
   justify-content: space-between;
 }
-aside .link1, .link2, .link3{
+aside .link1,
+.link2,
+.link3 {
   background-color: white;
   padding: 0.375rem;
   border-radius: 1.25rem;
@@ -310,48 +316,48 @@ aside .link1, .link2, .link3{
   height: 100%;
   width: 100%;
 }
-aside a{
+aside a {
   display: flex;
   align-items: stretch;
   height: 100%;
   overflow: auto;
 }
-aside .link-img{
+aside .link-img {
   position: relative;
   min-height: 100%;
   width: 33%;
   min-width: 33%;
   max-width: 33%;
 }
-aside img{
+aside img {
   border-radius: 1rem 0 0 1rem;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-aside .link-body{
+aside .link-body {
   display: flex;
   flex-direction: column;
 }
-aside .link-title{
+aside .link-title {
   display: flex;
   flex-direction: column;
 }
-aside h5{
+aside h5 {
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
-aside .link-text{
+aside .link-text {
   margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
-aside .space{
+aside .space {
   flex: 1;
 }
-aside .link-stars{
+aside .link-stars {
   margin: 0 0.75rem 0.25rem 0.75rem;
 }
-.starIcon{
-  color:#0065fc;
+.starIcon {
+  color: #0065fc;
 }
 
 /* ACTIVITES A MARSEILLE */
@@ -360,17 +366,13 @@ aside .link-stars{
 }
 #activites-mrs {
   display: flex;
-  margin-top: 20px;
-  margin-left: 8%;
-  margin-bottom: 80px;
-  width: 1700px;
   border-radius: 25px;
   flex-direction: column;
 }
 #activites {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-gap: 1rem;
   grid-template-rows: repeat(1, 225px);
   justify-content: center;
 }
