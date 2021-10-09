@@ -5,9 +5,7 @@
 body {
   font-family: "Raleway", sans-serif;
   padding: 0;
-  margin-top: 0;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin: 0;
   overflow-x: hidden;
 }
 #ab {
@@ -25,7 +23,10 @@ a:visited {
   list-style-type: none;
 }
 /** HEADER & Barre de navigation **/
-
+.search{
+  margin-left: 13%;
+  margin-right: 8.5%;
+}
 header {
   width: 100%;
   display: flex;
@@ -56,6 +57,7 @@ nav {
   justify-content: flex-end;
 }
 header .menu > ul {
+  margin-top:0;
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
@@ -205,26 +207,28 @@ p.filtres {
 
 /** HEBERGEMENTS **/
 
-h3 {
+h3{
   display: flex;
   font-size: 1.6rem;
 }
-main {
-  display: flex;
+main{
+  display: inline-flex;
+  width: 100%;
   height: 40rem;
+  margin-left: 8%;
 }
-#hebergements {
+#hebergements{
   display: flex;
   margin-right: 3.5%;
+  margin-left: 5%;
   flex-direction: column;
 }
-main article,
-main aside {
+main article,main aside{
   background: #f2f2f2;
   border-radius: 25px;
   margin-top: 2%;
 }
-main article > .room-list {
+main article > .room-list{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -234,7 +238,7 @@ main article > .room-list {
   padding-left: 3rem;
   padding-right: 3rem;
 }
-main > article .link {
+main > article .link{
   padding: 0.3rem;
   height: 100%;
   box-sizing: border-box;
@@ -242,53 +246,55 @@ main > article .link {
   border-radius: 20px;
   background-color: white;
 }
-main > article img {
+main > article img{
   display: flex;
   height: 7rem;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
 }
-.link:hover {
+.link:hover{
   transform: scale(1.1);
   transition: 0.5s;
 }
-
-main > article .link-body {
+main > article .link-body{
   display: flex;
   margin: 0.2rem 0.2rem;
   flex-direction: column;
   justify-content: flex-end;
 }
-main > article .link-title,
-.link-text,
-.link-stars {
+main > article .link-title,.link-text,.link-stars{
   color: black;
+
   margin: 0.1rem;
 }
-main > article .link-title {
-  font-size: 1.1rem;
+main > article .link-title{
+  font-size: 1.208rem;;
   font-weight: bold;
 }
-main > article .link-text {
+main > article .link-text{
   font-size: 0.9rem;
   padding-left: 0.1rem;
 }
-main > article .link-stars {
+main > article .link-stars{
   color: #0065fc;
   font-size: 0.8rem;
 }
-main > article .see-more {
+main > article .see-more{
   display: flex;
   padding-left: 50px;
   font-weight: bold;
   font-size: 1.1rem;
   padding-top: 30px;
 }
+.starIconGrey{
+  color: #d9d9d9;
+  font-size: 0.8rem;
+}
 
 /* LES PLUS POPULAIRES */
 
-aside {
+aside{
   display: grid;
   padding: 2rem;
   row-gap: 2rem;
@@ -296,16 +302,14 @@ aside {
   align-items: start;
   grid-template-rows: auto repeat(3, 1fr);
 }
-.poptitle {
-  font-size: 1.2rem;
+.poptitle{
+  font-size: 1.6rem;
   display: flex;
   margin: 0;
   display: flex;
   justify-content: space-between;
 }
-aside .link1,
-.link2,
-.link3 {
+aside .link1,.link2,.link3{
   background-color: white;
   padding: 0.375rem;
   border-radius: 1.25rem;
@@ -316,7 +320,11 @@ aside .link1,
   height: 100%;
   width: 100%;
 }
-aside a {
+.link1:hover, .link2:hover, .link3:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+aside a{
   display: flex;
   align-items: stretch;
   height: 100%;
@@ -340,141 +348,118 @@ aside .link-body {
   display: flex;
   flex-direction: column;
 }
-aside .link-title {
+aside .link-title{
   display: flex;
+  font-size: 1.208rem;
   flex-direction: column;
 }
-aside h5 {
+aside .link-title{
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
-aside .link-text {
+aside .link-text{
   margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
-aside .space {
+aside .space{
   flex: 1;
 }
-aside .link-stars {
+aside .link-stars{
   margin: 0 0.75rem 0.25rem 0.75rem;
 }
 .starIcon {
   color: #0065fc;
+  font-size: 0.8rem
 }
 
 /* ACTIVITES A MARSEILLE */
-#activites-marseille {
-  padding: 0px;
-}
 #activites-mrs {
   display: flex;
   border-radius: 25px;
   flex-direction: column;
+  width: 76.4%;
+  margin-left: 13%;
+  margin-bottom: 2%;
 }
-#activites {
+#activites{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-rows: repeat(1, 225px);
-  justify-content: center;
+  width: 100%;
 }
-.carte1:hover,
-.carte2:hover,
-.carte3:hover,
-.carte4:hover,
-.carte5:hover,
-.carte6:hover {
-  display: flex;
+.cartes-link,.cartes-link2,.cartes-link3,.cartes-link4,.cartes-link5,.cartes-link6{
+  border-radius: 20px;
+  box-shadow:  2px 2px 12px 0px #00000036;
+}
+.cartes-link:hover{
   transform: scale(1.1);
   transition: 0.5s;
-}
-.cartes-link {
-  display: flex;
 }
 .cartes-img > img {
   border-radius: 20px 20px 0px 0px;
   display: flex;
   object-fit: cover;
-  width: 300px;
-  height: 390px;
+  width: 100%;
+  height: 26.5rem;
+  margin: 0%;
 }
 .cartes-img2 > img {
   border-radius: 20px 20px 0px 0px;
   display: flex;
   object-fit: cover;
-  width: 300px;
-  height: 180px;
+  width: 100%;
+  height: 12rem;
 }
 .cartes-img3 > img {
   border-radius: 20px 20px 0px 0px;
   display: flex;
   object-fit: cover;
-  width: 300px;
-  height: 110px;
+  width: 100%;
+  height: 8.9rem;
+}
+.cartes-img4 > img{
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  height: 27rem;
+  margin: 0%;
 }
 .cartes-img5 > img {
   display: flex;
   object-fit: cover;
-  width: 300px;
-  height: 140px;
+  width: 100%;
+  height: 10rem;
   border-radius: 20px 20px 0px 0px;
 }
-.carte1 {
-  box-shadow: 4px 20px 20px 0px #8080805c;
-  background-color: white;
-  width: 300px;
-  height: 420px;
-  border-radius: 20px;
+.cartes-img6 > img {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  height: 11rem;
+  border-radius: 20px 20px 0px 0px;
 }
-.carte2 {
-  box-shadow: 4px 20px 20px 0px #8080805c;
-  background-color: white;
-  border-radius: 20px;
-  width: 300px;
+.cartes-link3{
+  margin-top: 9%;
 }
 .carte3 {
-  box-shadow: 4px 20px 20px 0px #8080805c;
-  margin-top: 40px;
-  background-color: white;
-  border-radius: 20px;
-  width: 300px;
-  height: 140px;
+  margin-top: 10%;
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 2;
 }
-
-.carte4 {
-  box-shadow: 4px 20px 20px 0px #8080805c;
-  background-color: white;
-  width: 300px;
-  height: 420px;
-  border-radius: 20px;
-}
-.carte5 {
-  box-shadow: 4px 20px 20px 0px #8080805c;
-  background-color: white;
-  border-radius: 20px;
-  width: 300px;
-  height: 170px;
-}
-.carte6 {
-  box-shadow: 4px 20px 20px 0px #8080805c;
-  background-color: white;
-  border-radius: 20px;
-  width: 300px;
-  height: 170px;
+.carte6{
   grid-column-start: 5;
   grid-column-end: -2;
   grid-row-start: 2;
   grid-row-end: 4;
 }
 .cartes-text {
-  background-color: white;
+  display: flex;
   font-weight: bold;
   color: black;
   border-radius: 0px 0px 20px 20px;
-  padding-left: 5px;
-  padding-bottom: 1px;
+  padding-left: 1rem;
 }
 
 /* FOOTER */
@@ -483,65 +468,13 @@ footer {
   width: 100%;
   display: flex;
   background-color: #f2f2f2;
-  height: 220px;
+  justify-content: space-around;
 }
-footer,
-ul {
-  padding: 0px;
-  margin: 0px;
-}
-.propos {
-  display: flex;
-  flex-direction: column;
-  margin-right: 450px;
-  margin-top: 10px;
-  margin-left: 50px;
-}
-.noshebergements {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-right: 350px;
-}
-.assistance {
-  display: flex;
-  margin-top: 10px;
-  flex-direction: column;
+footer,ul{
+  padding: 0;
+  margin-bottom: 0;
 }
 footer ul > li {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-@media screen and (max-width: 380px) {
-  header {
-    display: flex;
-    margin-top: 10px;
-    margin-right: 0px;
-    margin-left: 0px;
-    flex-direction: column;
-    border-bottom: 1px solid grey;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0px;
-    width: 100%;
-  }
-  #ef {
-    height: 80px;
-    display: inline-flex;
-    vertical-align: top;
-  }
-  .menu {
-    width: 100%;
-  }
-  #cd {
-    margin-left: 100px;
-  }
-  header .menu > ul {
-    justify-content: flex-start;
-    width: 100%;
-  }
+  display: flex;
+  margin-bottom: 5%;
 }
