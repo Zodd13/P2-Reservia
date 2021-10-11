@@ -12,20 +12,15 @@
   <!--Header & Barre de navigation -->
 
   <body>
-    <div class="search">
-      <header> 
-        <nav>
-          <div class="logo">
-            <img class="logoreservia" src="/images/logo/Reservia.svg" alt="logoo" />
-          </div>
-          <div class="menu">
+      <header class="header"> 
+          <img class="logoreservia" src="/images/logo/Reservia.svg" alt="logoo" />
+          <a class="headerlinkInscription" href="#inscrire"> S'inscrire</a>
+          <nav>
             <ul>
               <li><a class="headerlink" href="#hebergements"> Hébergements</a></li>
               <li><a class="headerlink" href="#activites"> Activités</a></li>
-              <li><a class="headerlinkInscription" href="#inscrire"> S'inscrire</a></li>
             </ul>
-          </div>
-        </nav>
+          </nav>
       </header>
 
       <!-- TITRE -->
@@ -42,7 +37,7 @@
       <!-- BARRE DE RECHERCHE -->
 
       <div class="inputsearch">
-        <button type="button">Rechercher</button>
+        <button type="button"><i class="fas fa-search" aria-hidden="true"></i><span  class="searchbu">Rechercher</span></button>
         <input type="search" name="city" id="city" placeholder="Marseille, France"/>
         <div id="mapicon">
           <i class="fa fa-map-marker-alt"></i>
@@ -59,7 +54,7 @@
           </div>
           <span class="filtertitle">Économique</span>
         </div>
-        <div class="filtre">
+        <div class="filtreFa">
           <div class="filtericon">
             <i class="fas fa-child filtericon" aria-hidden="true"></i>
           </div>
@@ -82,7 +77,6 @@
         <i class="fas fa-info infoicon" aria-hidden="true"></i>
         <p class="infotext">Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
-    </div> 
 
     <!--Hôtel & Populaire-->
 
@@ -257,7 +251,6 @@
       </article>
 
       <!-- ASIDE -->
-
       <aside>
           <h4 class="poptitle">Les plus populaires<i class="fas fa-chart-line" aria-hidden="true"></i></h4>
           <div class="link1">
