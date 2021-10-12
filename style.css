@@ -567,28 +567,31 @@ footer ul > li {
       grid-template-rows: repeat(3, 1fr);
       vertical-align: center;
       margin-left: 1rem;
+      margin-top: 0%;
     }
     p.filtres {
       padding: 0%;
-      margin-left: 1rem;
+      margin: 1rem;
     }
     .filtre {
       margin: 0rem;
       grid-column-start: 1;
     }
     .filtreFa {
+      margin-left: 0.5rem;
+      margin-bottom: 0.1rem;
       grid-column-start: 2;
     }
   }
   .infos {
     display: flex;
-    padding: 0.5rem;
-    margin-left: 2rem;
+    padding: 0;
+    margin-top: 0%;
+    margin-left: 1rem;
   }
 }
 @media screen and (max-width: 1280px) {
-  main {
-    margin-left: 0;
+  main{
     margin: auto;
     width: auto;
     display: flex;
@@ -599,31 +602,40 @@ footer ul > li {
     display: flex;
     width: auto;
     height: auto;
-    margin-left: 0%;
+    margin: 1rem;
     flex-direction: column;
     background: none;
+  }
+  main > article .see-more{
+    padding-left: 1rem;
   }
   .article-title {
     font-size: 1.4rem;
     font-weight: bold;
-    margin-left: 3rem;
+    margin-left: 0;
   }
   main article > .room-list {
     display: flex;
     flex-direction: column;
     width: auto;
+    padding: 0;
   }
-  main article,
-  main aside {
+  main article, main aside {
     border-radius: 0%;
     width: auto;
-    margin: 0%;
+    margin: auto;
+  }
+  main aside{
+    padding: 1rem;
   }
 }
 @media screen and (max-width: 1280px) {
   #activites-mrs {
-    max-width: auto;
-    margin-left: 10%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 0 1rem 1rem 1rem;
+ 
   }
   #activites {
     display: flex;
@@ -655,5 +667,12 @@ footer ul > li {
   .assistance ul > li {
     padding: 0.2rem 0;
     margin: 0%;
+  }
+}
+@media screen and (max-width: 1280px){
+  main article, main aside {
+    border-radius: 0%;
+    width: auto;
+    margin:0;
   }
 }
