@@ -5,86 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservia</title>
-    <link rel="stylesheet" href="/images/activites/">
     <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <!--Header-->
+  <!--Header & Barre de navigation -->
 
   <body>
-    <header>
-      <div id="logo">
-        <img src="/images/logo/Reservia.svg" alt="logoo" />
-      </div>
-      <nav>
-        <div class="menu">
-          <ul>
-            <li><a id="ab" href="#hebergements"> Hébergements</a></li>
-            <li><a id="cd" href="#activites"> Activités</a></li>
-            <li><a id="ef" href="#inscrire"> S'inscrire</a></li>
-          </ul>
+      <header class="header"> 
+          <img class="logoreservia" src="/images/logo/Reservia.svg" alt="logoo" />
+          <a class="headerlinkInscription" href="#inscrire"> S'inscrire</a>
+          <nav>
+            <ul>
+              <li><a class="headerlink" href="#hebergements"> Hébergements</a></li>
+              <li><a class="headerlink" href="#activites"> Activités</a></li>
+            </ul>
+          </nav>
+      </header>
+
+      <!-- TITRE -->
+
+      <div class="titre">
+        <div class="titre1">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         </div>
-      </nav>
-    </header>
+        <div class="soustitre">
+          <h2>En plein centre ville ou en pleine nature</h2>
+        </div>
+      </div>
 
-    <!-- TITRE -->
+      <!-- BARRE DE RECHERCHE -->
 
-    <div class="titre">
-      <div class="titre1">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <div class="inputsearch">
+        <button type="button"><i class="fas fa-search" aria-hidden="true"></i><span  class="searchbu">Rechercher</span></button>
+        <input type="search" name="city" id="city" placeholder="Marseille, France"/>
+        <div id="mapicon">
+          <i class="fa fa-map-marker-alt"></i>
+        </div>
       </div>
-      <div class="soustitre">
-        <p>En plein centre ville ou en pleine nature</p>
-      </div>
-    </div>
 
-    <!-- BARRE DE RECHERCHE -->
+      <!-- FILTRES DE RECHERCHE-->
 
-    <div class="inputsearch">
-      <button type="button">Rechercher</button>
-      <input
-        type="search"
-        name="city"
-        id="city"
-        placeholder="Marseille, France"
-      />
-      <div id="mapicon">
-        <i class="fa fa-map-marker-alt"></i>
+      <div class="filters">
+        <p class="filtres">Filtres</p>
+        <div class="filtre">
+          <div class="filtericon">
+            <i class="fas fa-money-bill-wave filtericon" aria-hidden="true"></i>
+          </div>
+          <span class="filtertitle">Économique</span>
+        </div>
+        <div class="filtreFa">
+          <div class="filtericon">
+            <i class="fas fa-child filtericon" aria-hidden="true"></i>
+          </div>
+          <span class="filtertitle">Familial</span>
+        </div>
+        <div class="filtre">
+          <div class="filtericon">
+            <i class="fas fa-heart filtericon" aria-hidden="true"></i>
+          </div>
+          <span class="filtertitle">Romantique</span>
+        </div>
+        <div class="filtre">
+          <div class="filtericon">
+            <i class="fas fa-dog filtericon" aria-hidden="true"></i>
+          </div>
+          <span class="filtertitle">Animaux autorisés</span>
+        </div>
       </div>
-    </div>
-
-    <!-- FILTRES DE RECHERCHE-->
-
-    <div class="filters">
-      <h2>Filtres</h2>
-      <div class="filtre">
-        <i class="fas fa-money-bill-wave"></i>
-        <span>Économique</span>
+      <div class="infos">
+        <i class="fas fa-info infoicon" aria-hidden="true"></i>
+        <p class="infotext">Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
-      <div class="filtre">
-        <i class="fas fa-child"></i>
-        <span>Familial</span>
-      </div>
-      <div class="filtre">
-        <i class="fas fa-heart"></i>
-        <span>Romantique</span>
-      </div>
-      <div class="filtre">
-        <i class="fas fa-dog"></i>
-        <span>Animaux autorisés</span>
-      </div>
-    </div>
-    <div class="infos">
-      <i class="fas fa-info"></i>
-      <p>Plus de 500 logements sont disponibles dans cette ville</p>
-    </div>
 
     <!--Hôtel & Populaire-->
 
     <main>
       <article id="hebergements">
-        <h3 id="hebergements">Hébergements à Marseille</h3>
+        <h3 class="article-title">Hébergements à Marseille</h3>
         <div class="room-list">
           <div class="link">
             <a
@@ -102,14 +100,14 @@
               <div class="link-body">
                 <h5 class="link-title">Auberge de la Cannebière</h5>
                 <p class="link-text">
-                  Nuit à partir de &nbsp;<strong>25€</strong>
+                  Nuit à partir de <strong>25€</strong>
                 </p>
                 <div class="link-stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i id="aa" class="fas fa-star"></i>
+                  <i class="fas fa-star starIconGrey" aria-hidden="true"></i>
                 </div>
               </div>
             </a>
@@ -161,7 +159,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i id="aa" class="fas fa-star"></i>
+                  <i class="fas fa-star starIconGrey" aria-hidden="true"></i>
                 </div>
               </div>
             </a>
@@ -186,8 +184,8 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i id="aa" class="fas fa-star"></i>
-                  <i id="aa" class="fas fa-star"></i>
+                  <i class="fas fa-star starIconGrey" aria-hidden="true"></i>
+                  <i class="fas fa-star starIconGrey" aria-hidden="true"></i>
                 </div>
               </div>
             </a>
@@ -213,7 +211,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i id="aa" class="fas fa-star"></i>
+                  <i class="fas fa-star starIconGrey" aria-hidden="true"></i>
                 </div>
               </div>
             </a>
@@ -247,22 +245,15 @@
         </div>
         <div class="see-more">
           <p>
-            <a href data-message="lien Afficher plus" tabindex="0"
-              >Afficher plus</a
-            >
+            <a href="#" target="_blank" data-message="lien Afficher plus" tabindex="0">Afficher plus</a>
           </p>
         </div>
       </article>
 
       <!-- ASIDE -->
-
       <aside>
-        <div class="aside-title">
-          <h3>Les plus populaires</h3>
-          <i class="fas fa-chart-line"></i>
-        </div>
-        <div class="room-list">
-          <div class="link">
+          <h4 class="poptitle">Les plus populaires<i class="fas fa-chart-line" aria-hidden="true"></i></h4>
+          <div class="link1">
             <a
               href="/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
               target="_blank"
@@ -278,17 +269,18 @@
               <div class="link-body">
                 <h5 class="link-title">Hôtel Le soleil du matin</h5>
                 <p class="link-text">Nuit à partir de 128<strong>€</strong></p>
+                <div class="space"></div>
                 <div class="link-stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
                 </div>
               </div>
             </a>
           </div>
-          <div class="link">
+          <div class="link2">
             <a
               href="/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
               target="_blank"
@@ -304,17 +296,18 @@
               <div class="link-body">
                 <h5 class="link-title">Au cœur de l'eau Chambres d'hôtes</h5>
                 <p class="link-text">Nuit à partir de 71<strong>€</strong></p>
+                <div class="space"></div>
                 <div class="link-stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i id="aa" class="fas fa-star"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
+                  <i class="fas fa-star starIconGrey" aria-hidden="true"></i>
                 </div>
               </div>
             </a>
           </div>
-          <div class="link">
+          <div class="link3">
             <a
               href="/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               target="_blank"
@@ -330,144 +323,137 @@
               <div class="link-body">
                 <h5 class="link-title">Hôtel Tout bleu et Blanc</h5>
                 <p class="link-text">Nuit à partir de 68<strong>€</strong></p>
+                <div class="space"></div>
                 <div class="link-stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i id="aa" class="fas fa-star"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
+                  <i class="fas fa-star starIcon" aria-hidden="true"></i>
+                  <i class="fas fa-star starIconGrey" aria-hidden="true"></i>
                 </div>
               </div>
             </a>
           </div>
-        </div>
       </aside>
+
     </main>
-
-    <!-- ACTIVITES A MARSEILLE -->
-    <article id="activites-mrs">
-      <h3 id="activites-marseille">Activités à Marseille</h3>
-      <section id="activites">
-        <div class="carte1">
-          <div class="cartes-link">
-            <a
-              href="/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-              target="_blank"
-              data-message="lien vers Vieux Port"
-              tabindex="0"
-            >
-              <div class="cartes-img">
-                <img
-                  src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                  alt="Vieux Port"
-                />
-              </div>
-              <div class="cartes-text">
-                <p>Vieux Port</p>
-              </div>
-            </a>
+      <!-- ACTIVITES A MARSEILLE -->
+      <article id="activites-mrs">
+        <h3 id="activites-marseille">Activités à Marseille</h3>
+        <section id="activites">
+          <div class="carte carte1">
+            <div class="cartes-link">
+              <a
+                href="/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                target="_blank"
+                data-message="lien vers Vieux Port"
+                tabindex="0"
+              >
+                <div class="cartes-img">
+                  <img
+                    src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                    alt="Vieux Port"
+                  />
+                </div>
+                <div class="cartes-text">
+                  <h4>Vieux Port</h4>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="carte2">
-          <div class="cartes-link2">
-            <a
-              href="/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-              target="_blank"
-              data-message="lien vers Fort de Pomegues"
-              tabindex="0"
-            >
-              <div class="cartes-img2">
-                <img
-                  src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                  alt="Fort de Pomegues"
-                />
-              </div>
-              <div class="cartes-text">
-                <p>Fort de Pomègues</p>
-              </div>
-            </a>
+          <div class="carte carte2">
+            <div class="cartes-link">
+              <a
+                href="/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                target="_blank"
+                data-message="lien vers Fort de Pomegues"
+                tabindex="0"
+              >
+                <div class="cartes-img2">
+                  <img
+                    src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                    alt="Fort de Pomegues"
+                  />
+                </div>
+                <div class="cartes-text">
+                  <p>Fort de Pomègues</p>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="carte3">
-          <div class="cartes-link3">
-            <a
-              href="/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-              target="_blank"
-              data-message="lien vers Iles du Frioul"
-              tabindex="0"
-            >
-              <div class="cartes-img3">
-                <img
-                  src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                  alt="Iles du Frioul"
-                />
-              </div>
-              <div class="cartes-text">
-                <p>Îles du Frioul</p>
-              </div>
-            </a>
+          <div class="carte carte3">
+            <div class="cartes-link">
+              <a
+                href="/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                target="_blank"
+                data-message="lien vers Iles du Frioul"
+                tabindex="0"
+              >
+                <div class="cartes-img3">
+                  <img
+                    src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                    alt="Iles du Frioul"
+                  />
+                </div>
+                <div class="cartes-text">
+                  <p>Îles du Frioul</p>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="carte4">
-          <div class="cartes-link">
-            <a
-              href="/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-              target="_blank"
-              data-message="lien vers Parc National des Calanques"
-            >
-              <div class="cartes-img">
-                <img
-                  src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                  alt="Parc National des Calanques"
-                />
-              </div>
-              <div class="cartes-text">
-                <p>Parc National des Calanques</p>
-              </div>
-            </a>
+          <div class="carte carte4">
+            <div class="cartes-link">
+              <a
+                href="/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                target="_blank"
+                data-message="lien vers Parc National des Calanques"
+              >
+                <div class="cartes-img4">
+                  <img
+                    src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                    alt="Parc National des Calanques"
+                  />
+                </div>
+                <div class="cartes-text">
+                  <p>Parc National des Calanques</p>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="carte5">
-          <div class="cartes-link">
-            <a
-              href="/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-              target="_blank"
-              data-message="lien vers Notre dame de la garde"
-            >
-              <div class="cartes-img5">
-                <img
-                  src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                  alt="Notre-dame-de-la-garde"
-                />
-              </div>
-              <div class="cartes-text">
-                <p>Notre-Dame-de-la-Garde</p>
-              </div>
-            </a>
+          <div class="carte carte5">
+            <div class="cartes-link">
+              <a
+                href="/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                target="_blank"
+                data-message="lien vers Notre dame de la garde"
+                >
+                <div class="cartes-img5">
+                  <img
+                    src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                    alt="Notre-dame-de-la-garde"
+                  />
+                </div>
+                <div class="cartes-text">
+                  <p>Notre-Dame-de-la-Garde</p>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="carte6">
-          <div class="cartes-link">
-            <a
-              href="/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-              target="_blank"
-              data-message="lien vers Parc Longchamp"
-            >
-              <div class="cartes-img5">
-                <img
-                  src="/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                  alt="Parc Longchamp"
-                />
-              </div>
-              <div class="cartes-text">
-                <p>Parc Longchamp</p>
-              </div>
-            </a>
+          <div class="carte carte6">
+            <div class="cartes-link">
+              <a href="/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" target="_blank" data-message="lien vers Parc Longchamp">
+                <div class="cartes-img6">
+                  <img src="/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/>
+                </div>
+                <div class="cartes-text">
+                  <p>Parc Longchamp</p>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
-    </article>
-
+        </section>
+      </article>
+  
     <!-- FOOTER -->
 
     <footer>
