@@ -15,7 +15,8 @@ body {
   font-weight: bold;
   color: #0065fc;
 }
-a:visited {
+a{
+  text-decoration: none;
   color: black;
 }
 * {
@@ -627,6 +628,7 @@ footer ul > li {
   }
   main aside{
     padding: 1rem;
+    margin-bottom: auto;
   }
 }
 @media screen and (max-width: 1280px) {
