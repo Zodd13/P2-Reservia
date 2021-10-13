@@ -624,7 +624,7 @@ footer ul > li {
   main article, main aside {
     border-radius: 0%;
     width: auto;
-    margin: auto;
+    margin-bottom: 1rem;
   }
   main aside{
     padding: 1rem;
@@ -675,6 +675,7 @@ footer ul > li {
   main article, main aside {
     border-radius: 0%;
     width: auto;
-    margin:0;
+    margin-right: 0%;
+    margin-bottom: 1rem;
   }
 }
