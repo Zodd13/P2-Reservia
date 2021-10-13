@@ -675,15 +675,7 @@ footer ul > li {
   main article, main aside {
     border-radius: 0%;
     width: auto;
-    margin-right: 0%;
-    margin-bottom: 1rem;
+    margin: auto;
   }
 }
-@media screen and (max-width: 400px){
-  main article, main aside {
-    border-radius: 0%;
-    width: auto;
-    margin-right: 0%;
-    margin-bottom: 2rem;
-  }
-}
+
