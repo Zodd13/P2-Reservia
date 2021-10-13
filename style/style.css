@@ -15,7 +15,7 @@ body {
   font-weight: bold;
   color: #0065fc;
 }
-a {
+a{
   text-decoration: none;
   color: black;
 }
@@ -495,9 +495,6 @@ footer ul > li {
 }
 
 @media screen and (max-width: 1280px) {
-  body {
-    overflow-x: hidden;
-  }
   .header {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . button" "navbar navbar navbar";
@@ -595,7 +592,7 @@ footer ul > li {
   }
 }
 @media screen and (max-width: 1280px) {
-  main {
+  main{
     margin: auto;
     width: auto;
     display: flex;
@@ -610,7 +607,7 @@ footer ul > li {
     flex-direction: column;
     background: none;
   }
-  main > article .see-more {
+  main > article .see-more{
     padding-left: 1rem;
   }
   .article-title {
@@ -624,13 +621,12 @@ footer ul > li {
     width: auto;
     padding: 0;
   }
-  main article,
-  main aside {
+  main article, main aside {
     border-radius: 0%;
     width: auto;
     margin-bottom: 1rem;
   }
-  main aside {
+  main aside{
     padding: 1rem;
     margin-bottom: auto;
   }
@@ -641,6 +637,7 @@ footer ul > li {
     height: auto;
     margin: auto;
     padding: 0 1rem 1rem 1rem;
+ 
   }
   #activites {
     display: flex;
@@ -674,13 +671,22 @@ footer ul > li {
     margin: 0%;
   }
 }
-@media screen and (max-width: 1280px) {
-  main article,
-  main aside {
+@media screen and (max-width: 1280px){
+  main article, main aside {
     border-radius: 0%;
-    overflow-x: hidden;
-    padding: auto;
     width: auto;
-    margin: auto;
+    margin-right: 0%;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 400px){
+  main article, main aside {
+    border-radius: 0%;
+    width: auto;
+    margin-right: 0%;
+    margin-bottom: 2rem;
+  }
+  aside .link3{
+    position: relative;
   }
 }
