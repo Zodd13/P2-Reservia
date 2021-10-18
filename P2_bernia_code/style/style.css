@@ -494,7 +494,7 @@ footer ul > li {
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1380px) {
   .header {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . button" "navbar navbar navbar";
@@ -533,7 +533,7 @@ footer ul > li {
     border-bottom: #0065fc 3px solid;
     border-top: none;
   }
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1380px) {
     .titre {
       margin: auto;
       font-weight: bold;
@@ -548,8 +548,8 @@ footer ul > li {
     }
     .inputsearch {
       width: 100%;
-      margin: 0%;
-      justify-content: center;
+      margin-left: 5%;
+      justify-content: flex-end;
     }
     button {
       border-radius: 15px 15px 15px 15px;
